@@ -2,6 +2,7 @@
 :root {
     --primary-color: #6CDAE7;
     --secondary-color: #121212;
+    --tertiary-color: #00AEEF;
     --background-color: #fff;
     --text-color: #333;
     --border-color: #eee;
@@ -78,7 +79,7 @@ header {
 .menu li > a:after {
     content: '';
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     bottom: 0;
     width: 0;
     height: 2px;
@@ -108,7 +109,7 @@ header {
 /* Language Selector */
 .language-selector {
     display: flex;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--tertiary-color);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -125,7 +126,7 @@ header {
 }
 
 .lang-btn.active {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: #fff;
 }
 
@@ -141,24 +142,20 @@ header {
 }
 
 .btn-outline {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 1.5px solid var(--tertiary-color);
+    color: var(--tertiary-color);
     background: transparent;
 }
 
 .btn-outline:hover {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: #fff;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+    color: #fff;
     border: none;
-}
-
-.btn-primary:hover {
-    background-color: var(--hover-color);
 }
 
 .btn-block {
@@ -166,7 +163,7 @@ header {
     width: 100%;
 }
 
-/* Menú móvil */
+/* Mobile Menu */
 .mobile-menu-toggle {
     display: none;
     background: none;
