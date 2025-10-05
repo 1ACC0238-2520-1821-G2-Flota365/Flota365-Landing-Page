@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="public/Flota365.png">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Flota365 - Complete Fleet Management Solution</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+                <img src="src/assets/images/logo.png" alt="Flota365" class="logo-image">
+            </div>
+        <nav class="navigation">
+            <ul class="menu">
+                <li>
+                    <a href="#" data-i18n="nav.home">Home</a>
+                </li>
+                <li>
+                    <a href="#about" data-i18n="nav.about">About</a>
+                </li>
+                <li>
+                    <a href="#features" data-i18n="nav.features">Features</a>
+                </li>
+                <li>
+                    <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+                </li> 
+                <li>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-buttons">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">ENG</button>
+                    <button class="lang-btn" data-lang="es">ESP</button>
+                </div>
+            </div>
+            <div class="nav-buttons auth-buttons">
+                <a href="https://flota365-app.web.app/" class="btn btn-outline" data-i18n="auth.login">Log In</a>
+                <a href="#" class="btn btn-primary" data-i18n="auth.signup">Sign Up</a>
+            </div>        
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content-wrapper">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">Comprehensive Fleet Management Solution</h1>
+                <p data-i18n="hero.subtitle">Streamline your operations and reduce costs with our powerful fleet
+                        management system</p>
+                <a href="#" class="hero-btn btn-primary" data-i18n="hero.start">Get Started</a>
+                <a href="#contact" class="hero-btn btn-primary" data-i18n="hero.cta">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="src/assets/images/dashboard.png" alt="Fleet Management Dashboard">
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-section-title">
+            <h2 data-i18n="about.title">About</h2>
+            <p data-i18n="about.subtitle">Meet our company</p>
+        </div>
+        <p data-i18n="about.p1">Flota365 is a comprehensive fleet management solution designed to help companies of all sizes manage their vehicles more efficiently. Our platform centralizes all aspects of fleet management, from maintenance scheduling and fuel tracking to document management and driver supervision.</p>
+        <p data-i18n="about.p2">With over 10 years of experience in the fleet management industry, we understand the challenges fleet managers face daily. That's why we've created a solution that is both powerful and easy to use, allowing you to focus on your business while we take care of your fleet.</p>
+        <p data-i18n="about.p3">Our mission is to reduce operational costs, improve vehicle lifespan, and enhance driver safety through intelligent fleet management. Join thousands of satisfied customers who have transformed their fleet operations with Flota365.</p>
+    </section>
+    <!-- Development Team Section -->
+    <section class="development-team">
+        <h2 class="team-title" data-i18n="team.title">Our Development Team</h2>
+        <div class="team-list">
+            <div class="team-member">
+                <img src="src/assets/images/Jose-Diego.jpg" alt="Developer A">
+                <h3>Jose <br> Huamani</h3>
+                    <p data-i18n="team.role">Frontend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="src/assets/images/Giovany Torres.jpg" alt="Developer B">
+                <h3>Giovany <br> Torres</h3>
+                <p data-i18n="team.role">Mobile Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="src/assets/images/RenzoLlerena.png" alt="Developer C">
+                <h3>Renzo <br> Llerena</h3>
+                <p data-i18n="team.role">Backend Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="src/assets/images/RenzoVillafuerte.png" alt="Developer D">
+                <h3>Renzo <br> Villafuerte</h3>
+                <p data-i18n="team.role">Fullstack Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="src/assets/images/JessicaComettant.jpeg" alt="Developer E">
+                <h3>Jessica <br> Comettant</h3>
+                <p data-i18n="team.role">UX Designer</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="feature-section-title">
+                <h2 data-i18n="features.title">Features</h2>
+                <p data-i18n="features.subtitle">Learn about the features of our software</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-wrench" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.maintenance.title">Maintenance</h3>
+                        <p data-i18n="features.maintenance.desc">Schedule and track all maintenance activities, receive alerts for upcoming services, and maintain complete service history for each vehicle.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.checklists.title">Vehicle Checklists</h3>
+                        <p data-i18n="features.checklists.desc">Create customized inspection checklists, perform digital vehicle inspections, and identify issues before they become problems.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-gas-pump" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.fuel.title">Fuel Management</h3>
+                        <p data-i18n="features.fuel.desc">Track fuel consumption, analyze efficiency, identify unusual fuel usage patterns, and integrate with fuel cards for automatic data collection.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.documents.title">Document Management</h3>
+                        <p data-i18n="features.documents.desc">Store and manage all documents related to vehicles, drivers, and providers in one secure location with automatic expiration alerts.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-car-side" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.tires.title">Tire Management</h3>
+                        <p data-i18n="features.tires.desc">Monitor tire conditions, track rotations and replacements, and optimize tire life to reduce costs and improve safety.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.inventory.title">Purchases and Inventory</h3>
+                        <p data-i18n="features.inventory.desc">Manage parts inventory, track purchases, set reorder points, and ensure you always have the parts you need when you need them.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-route" style="color: #00AEEF;"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 data-i18n="features.trips.title">Trip and Advance Management</h3>
+                        <p data-i18n="features.trips.desc">Plan and track trips, manage advance payments, and monitor travel expenses for better budget control and optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <i class="fas fa-chart-bar"></i>
+                <h3 data-i18n="stats.benefit1.title">Primary Benefit One</h3>
+                <p data-i18n="stats.benefit1.desc">Reduce maintenance costs by up to 25%</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <h3 data-i18n="stats.benefit2.title">Primary Benefit Two</h3>
+                <p data-i18n="stats.benefit2.desc">Save 15+ hours per week on fleet management tasks</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-leaf"></i>
+                <h3 data-i18n="stats.benefit3.title">Primary Benefit Three</h3>
+                <p data-i18n="stats.benefit3.desc">Improve fuel efficiency by up to 15%</p>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="stats-container">
+            <div class="stats-section-title">
+                <h2 data-i18n="pricing.title">Choose your plan</h2>
+                <p data-i18n="pricing.subtitle">Flexible plans to match your needs</p>
+            </div>
+            <div class="pricing-toggle">
+                <button class="toggle-btn active plan-type" data-i18n="pricing.monthly">Monthly</button>
+                <button class="toggle-btn plan-type" data-i18n="pricing.annual">Annual</button>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <h3>BASIC</h3>
+                        <div class="pricing-price">$9</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.maintenance">Maintenance</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.checklists">Vehicle checklists</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.fuel">Fuel management</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.documents">Document management</span></li>
+                        <li><i class="fas fa-xmark" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.tires">Tire management</span></li>
+                        <li><i class="fas fa-xmark" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.inventory">Purchases and inventory</span></li>
+                        <li><i class="fas fa-xmark" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.trips">Trip and advance management</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" data-i18n="pricing.cta">Get Started</a>
+                </div>
+                <div class="pricing-item">
+                    <div class="pricing-header">
+                        <h3>ESSENTIAL</h3>
+                        <div class="pricing-price">$19</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.maintenance">Maintenance</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.checklists">Vehicle checklists</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.fuel">Fuel management</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.documents">Document management</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.tires">Tire management</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.inventory">Purchases and inventory</span></li>
+                        <li><i class="fas fa-check" style="color: #00AEEF;"></i> <span data-i18n="pricing.features.trips">Trip and advance management</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary" data-i18n="pricing.cta">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-section-title">
+                <h2 data-i18n="contact.title">Contact</h2>
+                <p data-i18n="contact.subtitle">Get in touch with us</p>
+            </div>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Name" data-i18n="contact.name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email" data-i18n="contact.email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone" data-i18n="contact.phone">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Company (Optional)" data-i18n="contact.company">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Message" data-i18n="contact.message"></textarea>
+                </div>
+                <button class="btn btn-primary btn-block" data-i18n="contact.submit">Send Message</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3 data-i18n="footer.about.title">About</h3>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.about.company">Company</a></li>
+                        <li><a href="#" data-i18n="footer.about.team">Team</a></li>
+                        <li><a href="#" data-i18n="footer.about.careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.privacy.title">Privacy Policy</h3>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.privacy.dataProtection">Data Protection</a></li>
+                        <li><a href="#" data-i18n="footer.privacy.userPrivacy">User Privacy</a></li>
+                        <li><a href="#" data-i18n="footer.privacy.cookiePolicy">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.terms.title">Terms and Conditions</h3>
+                    <ul>
+                        <li><a href="#" data-i18n="footer.terms.userAgreement">User Agreement</a></li>
+                        <li><a href="#" data-i18n="footer.terms.serviceTerms">Service Terms</a></li>
+                        <li><a href="#" data-i18n="footer.terms.refundPolicy">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.companyAddress">flota365Peru@outlook.com</p>
+                <p data-i18n="footer.copyright">Flota365. All rights reserved 2025.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+	<script src="src/js/translations/en.js"></script>
+	<script src="src/js/translations/es.js"></script>
+	<script src="src/js/main.js"></script>
+</body>
+</html>
