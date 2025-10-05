@@ -173,3 +173,61 @@ header {
     cursor: pointer;
     padding: 5px;
 }
+
+/* Hero Styles */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding: 6rem 8%;
+}
+
+.hero-content-wrapper {
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 1.25rem;
+}
+
+.hero-content > h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.40rem;
+    color: var(--secondary-color);
+}
+
+.hero-content > p {
+    color: var(--text-color);
+    font-size: 1.15rem;
+    margin-bottom: 1.40rem;
+}
+
+.hero-btn {
+    margin-top: 1.4rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    transition: all 0.3s ease;
+}
+
+.hero-content .hero-btn + .hero-btn {
+    margin-left: 1rem;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image > img {
+    border-radius: 1.25rem;
+    width: clamp(250px, 45vw, 550px);
+    height: auto;
+    object-fit: contain;
+}
