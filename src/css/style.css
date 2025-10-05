@@ -277,3 +277,103 @@ header {
     font-weight: var(--font-weight-medium);
     margin: 0;
 }
+
+/* Development Team Styles */
+.development-team {
+    padding: 6rem 8%;
+    background: linear-gradient(to bottom, #f9fafc, #f3f5f7);
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.team-title {
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.team-title::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    background: var(--tertiary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+    transform: translateY(0);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top center, rgba(0, 191, 255, 0.1), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.team-member:hover::before {
+    opacity: 1;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.team-member img {
+    width: clamp(90px, 10vw, 120px);
+    height: clamp(90px, 10vw, 120px);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 4px rgba(0, 191, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 6px rgba(0, 191, 255, 0.2);
+}
+
+.team-member h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: var(--tertiary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
